@@ -24,18 +24,21 @@ body {
   line-height: 1.75;
   background: #fff;
 
+
 }
 
 .header > div {
-  display:inline block;
-  margin: 0 100px;
+  display:inline-block;
+  margin: 0 150px;
   text-align: center;
+
 }
 
 div.nav {
   float:right;
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
+  height: 100%;
 }
 
 
@@ -210,21 +213,14 @@ li a:hover:not(.active) {
   color: white;
 }
 
-/*includes main-bio and connect-with-me*/
-/*section {*/
-  /*padding: 20px;*/
-  /*margin-bottom: 20px;*/
-  /*background: #fff;*/
-  /*width: 650px;*/
-/*}*/
+
 
 /*container has main-bio, bio-image, connect-with-me*/
 .container {
-  /*text-align: left;*/
+ 
   width: 960px;
   margin: 0px auto;
-  /*margin-bottom: 100px;*/
-  /*z-index:2;*/
+
 }
 
 .clearfix:after {
@@ -264,7 +260,7 @@ and contact form for contact*/
   /*margin-left:20px;*/
   /*text-align: left;*/
   padding-top: 30px;
-  /*margin-bottom:110px;*/
+  margin-bottom:110px;
   z-index: -90;
   border: 1px solid #dddddd;
 }
@@ -285,7 +281,6 @@ p {
   position: relative;
   top: 130px;
   text-align: center;
-  /*text-decoration: underline;*/
   z-index: -100;
   padding: 20px;
 }
@@ -297,10 +292,7 @@ p {
   padding-left:20px;
 }
 .container1 {
- /* width:20%;*/
-  /*background-color: #4aaaa5;*/
-  /*padding:10px;*/
-  /*z-index:90;*/
+
   position: relative;
   border: 1px solid black;
   height: 200px;
@@ -313,11 +305,6 @@ p {
 #hangman {
 
 width: 100%;
-/*height: 250px;
-margin-left: 30px;
-margin-right: 20px;
-margin-bottom: 20px;
-padding-top: 35px;*/
 position: relative;
 }
 
@@ -325,7 +312,6 @@ position: relative;
 span {
   position: absolute;
   width: 100%;
-  /*border: 2px solid black;*/
   bottom: 10px;
   text-align: center;
   background-color: #4aaaa5;
@@ -334,11 +320,6 @@ span {
 }
 
 .container2 {
- /* width:20%;
-  background-color: #4aaaa5;
-  position:absolute;
-  padding:10px;
-  z-index: 90;*/
   position: relative;
   border: 1px solid black;
   height: 200px;
@@ -350,11 +331,6 @@ span {
 #rpg-game {
 
 width: 100%;
-/*height: 250px;
-margin-left: 30px;
-margin-right: 20px;
-margin-bottom: 20px;
-padding-top: 35px;*/
 position: relative;
 }
 
@@ -370,11 +346,6 @@ position: relative;
 #triviagame {
 
 width: 100%;
-/*height: 250px;
-margin-left: 30px;
-margin-right: 20px;
-margin-bottom: 20px;
-padding-top: 35px;*/
 position: relative;
 }
 
@@ -391,11 +362,6 @@ position: relative;
 #rutgersinfowidget {
 
 width: 100%;
-/*height: 250px;
-margin-left: 30px;
-margin-right: 20px;
-margin-bottom: 20px;
-padding-top: 35px;*/
 position: relative;
 }
 
@@ -411,50 +377,37 @@ position: relative;
 #rockpaperscissors {
 
 width: 100%;
-/*height: 250px;
-margin-left: 30px;
-margin-right: 20px;
-margin-bottom: 20px;
-padding-top: 35px;*/
 position: relative;
 }
 
 footer {
   
-  /*margin-top: 700px; */
+
   padding: 20px;
-  /*clear: both;*/
   background: #666666;
   position: fixed;
   width: 100%;
   bottom:0;
-  /*margin-left:0;*/
   text-align:center;
   color: #ededed;
   border-top: 8px solid #4aaaa5;
-  /*z-index:1;*/
+
 }
 
 /*MEDIA QUERIES*/
 
 
 @media only screen and (max-width: 980px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+
     }
 
 
 @media only screen and (max-width: 768px){
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+  
 }
 
 @media only screen and (max-width: 640px){
-  /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+  
 }
 
 
