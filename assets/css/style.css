@@ -18,34 +18,53 @@ body {
   /*background-image: url("images/cork-wallet.png");*/
 }
 
+.header {
+  height: 114px;
+  border: 1px solid black;
+  line-height: 1.75;
+  background: #fff;
+
+}
+
+.header > div {
+  display:inline block;
+  margin: 0 100px;
+  text-align: center;
+}
+
+div.nav {
+  float:right;
+  display: flex;
+  align-items: center;
+}
 
 
 /*div that includes header and h1 tags*/ 
-#fixed {
+/*#fixed {
   position: fixed;
   margin: 0 auto;
-  top: 0;
+  top: 0;*/
  /* height: 83px;*/
   /*left: 150px;*/
   /*padding: 0px;
   margin: 0;*/
-  text-align: center;
+ /* text-align: center;
   background: #eee;
   width: 100%;
-}
+}*/
 
 /*includes h1 tag with my name*/
-header {
+/*header {*/
   /*padding: 20px;*/
   /*margin-bottom: 20px;*/
-  position:fixed;
-  width:100%;
+  /*position:fixed;*/
+  /*width:100%;
   color: #fff;
   background: #ffffff;
   border: 1px solid #cccccc;
   z-index:200;
-  margin: 0 auto;
-}
+  margin: 0 auto;*/
+/*}*/
 
 
 /*My Name at top of the page*/
@@ -57,10 +76,9 @@ h1 {
   /*height:84px;*/
   /*left:148px;
   top:2px;*/
-  margin: 0;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 24px;
-  margin-left:150px;
+  /*margin-left:150px;*/
   font-weight: bold;
 }
 
@@ -143,7 +161,7 @@ h3 {
 
 /*nav tag with ul and li of about, portfolio, 
 contact*/
-#absolute {
+/*#absolute {
   position: absolute;
   right: 1040px;
   left:820px;
@@ -151,23 +169,24 @@ contact*/
   padding: 0 30px;
   background: #fff;
   font-size: 18px;
-}
+}*/
 
 ul {
-  position: fixed;
-  top:0;
+  /*position: fixed;
+  top:0;*/
   list-style-type: none;
-  margin:0;
-  padding:35px 30px;
-  overflow:hidden;
+  display: flex;
+  /*padding:35px 30px;*/
+  /*overflow:hidden;*/
 }
 
 li {
-  display: inline;
-  float: left;
-  display: block;
+  /*display: inline;
+  float: left;*/
+  /*display: block;*/
   padding: 10px 5px;
   border-right: 1px solid #666666;
+  margin-right: 10px;
 }
 
 li:last-child {
@@ -263,7 +282,7 @@ p {
   float:right;
   background: #ffffff;
   border: 1px solid #cccccc;
-  /*position: relative;*/
+  position: relative;
   top: 130px;
   text-align: center;
   /*text-decoration: underline;*/
@@ -417,25 +436,7 @@ footer {
 }
 
 /*MEDIA QUERIES*/
-[class*="col-"] {
-  float:left;
-  padding: 15px;
-}
 
-}
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 @media only screen and (max-width: 980px) {
     /* For mobile phones: */
@@ -445,19 +446,17 @@ footer {
 
 
 @media only screen and (max-width: 768px){
-.col-m-1 {width: 8.33%;}
-.col-m-2 {width: 16.66%;}
-.col-m-3 {width: 25%;}
-.col-m-4 {width: 33.33%;}
-.col-m-5 {width: 41.66%;}
-.col-m-6 {width: 50%;}
-.col-m-7 {width: 58.33%;}
-.col-m-8 {width: 66.66%;}
-.col-m-9 {width: 75%;}
-.col-m-10 {width: 83.33%;}
-.col-m-11 {width: 91.66%;}
-.col-m-12 {width: 100%;}
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
 }
+
+@media only screen and (max-width: 640px){
+  /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+}
+
 
 
 
