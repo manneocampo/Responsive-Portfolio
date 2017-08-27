@@ -120,17 +120,17 @@ h2 {
 /*connect-with-me*/
 h3 {
   /*margin-top:100px;*/
-  position: relative;
+  /*position: relative;*/
   /*border-bottom: 1px solid #666666;*/
   /*text-decoration: underline;*/
   color: #4aaaa5;
   font-size: 20px;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-weight: bold;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
 }
 
-h3:after {
+/*h3:after {
   background: none repeat scroll 0 0 #666666;
   bottom: -15px;
   content:"";
@@ -139,7 +139,7 @@ h3:after {
   position: relative;
   right: -35px;
   width: 200px;
-}
+}*/
 
 /*nav tag with ul and li of about, portfolio, 
 contact*/
@@ -245,7 +245,7 @@ and contact form for contact*/
   /*margin-left:20px;*/
   /*text-align: left;*/
   padding-top: 30px;
-  margin-bottom:110px;
+  /*margin-bottom:110px;*/
   z-index: -90;
   border: 1px solid #dddddd;
 }
@@ -263,11 +263,12 @@ p {
   float:right;
   background: #ffffff;
   border: 1px solid #cccccc;
-  position: relative;
+  /*position: relative;*/
   top: 130px;
   text-align: center;
   /*text-decoration: underline;*/
   z-index: -100;
+  padding: 20px;
 }
 
 /*Portfolio IDs*/ 
@@ -415,21 +416,48 @@ footer {
   /*z-index:1;*/
 }
 
-/*Tried to have each one social image link have an id, 
-but maybe needs to be a class or don't need bc "connect-with-me" id*/
-/*#github,
-#linkedin, 
-#stackoverflow{
-*/  /*width: 100px;*/
-  /*height: 100px;*/
-  /*background-image:url("../images/github.png");*/
-/*  position: relative;
-  top: 130px;
-  z-index: 2;
+/*MEDIA QUERIES*/
+[class*="col-"] {
+  float:left;
+  padding: 15px;
 }
 
-*/ 
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
+@media only screen and (max-width: 980px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+@media only screen and (max-width: 768px){
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
 
 
 
