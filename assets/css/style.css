@@ -1,0 +1,435 @@
+/**
+ * HW Assignment portfolio, index, contact StyleSheet
+ **/
+
+* {
+  box-sizing: border-box;
+  /*text-align: center;*/
+}
+
+/*Took some of the float code to start with ideas*/
+/*any code that is commented out inside {} is something I tried but didn't work*/
+
+body {
+  font-size: 15px;
+  line-height: 24px;
+  color: #777777;
+  /*background: pink;*/
+  /*background-image: url("images/cork-wallet.png");*/
+}
+
+
+
+/*div that includes header and h1 tags*/ 
+#fixed {
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+ /* height: 83px;*/
+  /*left: 150px;*/
+  /*padding: 0px;
+  margin: 0;*/
+  text-align: center;
+  background: #eee;
+  width: 100%;
+}
+
+/*includes h1 tag with my name*/
+header {
+  /*padding: 20px;*/
+  /*margin-bottom: 20px;*/
+  position:fixed;
+  width:100%;
+  color: #fff;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  z-index:200;
+  margin: 0 auto;
+}
+
+
+/*My Name at top of the page*/
+h1 {
+  background: #4aaaa5;
+  color: #fff;
+  padding: 35px 30px;
+  width:234px;
+  /*height:84px;*/
+  /*left:148px;
+  top:2px;*/
+  margin: 0;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 24px;
+  margin-left:150px;
+  font-weight: bold;
+}
+
+/*About Me*/
+h2 {
+  /*margin-top: 100px;*/
+  margin-left: 20px;
+  top:120px;
+  color: #4aaaa5;
+  font-size: 23px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  /*border-bottom: 1px solid #666666;*/
+  font-weight: bold;
+}
+
+/*h2:after {
+  background: none repeat scroll 0 0 #666666;
+  bottom: -15px;
+  content:"";
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 600px;
+  z-index:100;
+}*/
+
+/*hr {
+  display:block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 20px auto;
+  margin-right: auto;
+  border-style:inset;
+  border-width:1px;
+}*/
+
+.divider {
+  margin: 0 20px;
+}
+
+/*Contact specific*/
+.main-content {
+  margin: 20px;
+
+}
+
+.contactcontent {
+  width: 100%;
+  padding: 10px;
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: #4aaaa5;
+}
+
+/*connect-with-me*/
+h3 {
+  /*margin-top:100px;*/
+  position: relative;
+  /*border-bottom: 1px solid #666666;*/
+  /*text-decoration: underline;*/
+  color: #4aaaa5;
+  font-size: 20px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+h3:after {
+  background: none repeat scroll 0 0 #666666;
+  bottom: -15px;
+  content:"";
+  display: block;
+  height: 2px;
+  position: relative;
+  right: -35px;
+  width: 200px;
+}
+
+/*nav tag with ul and li of about, portfolio, 
+contact*/
+#absolute {
+  position: absolute;
+  right: 1040px;
+  left:820px;
+  width: 270px;
+  padding: 0 30px;
+  background: #fff;
+  font-size: 18px;
+}
+
+ul {
+  position: fixed;
+  top:0;
+  list-style-type: none;
+  margin:0;
+  padding:35px 30px;
+  overflow:hidden;
+}
+
+li {
+  display: inline;
+  float: left;
+  display: block;
+  padding: 10px 5px;
+  border-right: 1px solid #666666;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4aaaa5;
+  color:white;
+  /*padding:5px 5px;*/
+}
+
+li a:hover:not(.active) {
+  background-color: #666666;
+  color: white;
+}
+
+/*includes main-bio and connect-with-me*/
+/*section {*/
+  /*padding: 20px;*/
+  /*margin-bottom: 20px;*/
+  /*background: #fff;*/
+  /*width: 650px;*/
+/*}*/
+
+/*container has main-bio, bio-image, connect-with-me*/
+.container {
+  /*text-align: left;*/
+  width: 960px;
+  margin: 0px auto;
+  /*margin-bottom: 100px;*/
+  /*z-index:2;*/
+}
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/*kept main-bio name for main sec in the html for all three files
+bio-image only pertains to index file*/
+#main-bio, 
+#bio-image {
+  float: left;
+
+}
+
+/*only pertains to index file*/
+#bio-image {
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;
+}
+
+/*only pertains to index file*/
+#paragraph1 {
+  padding-top: 35px;
+}
+
+/*pertains to all html files for main section
+that has text and bio image for index, pics for portfolio, 
+and contact form for contact*/
+#main-bio {
+  width: 650px;
+  background: #fff;
+  margin-top: 130px;
+  /*margin-left:20px;*/
+  /*text-align: left;*/
+  padding-top: 30px;
+  margin-bottom:110px;
+  z-index: -90;
+  border: 1px solid #dddddd;
+}
+
+/*pertains to all three html files*/
+p {
+  margin: 0 20px;
+  padding-top: 10px;
+  font-family: "Arial", Helvetica Neue, Helvetica, sans-serif;
+}
+
+/*includes h3 and social link images; pertains to all 3 html files*/
+#connect-with-me {
+  width:270px;
+  float:right;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  position: relative;
+  top: 130px;
+  text-align: center;
+  /*text-decoration: underline;*/
+  z-index: -100;
+}
+
+/*Portfolio IDs*/ 
+
+.piccontainer {
+  width: 50%;
+  padding-left:20px;
+}
+.container1 {
+ /* width:20%;*/
+  /*background-color: #4aaaa5;*/
+  /*padding:10px;*/
+  /*z-index:90;*/
+  position: relative;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  top:50px;
+  left:50px;
+}
+
+
+#hangman {
+
+width: 100%;
+/*height: 250px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;*/
+position: relative;
+}
+
+/*this span is for all pics*/
+span {
+  position: absolute;
+  width: 100%;
+  /*border: 2px solid black;*/
+  bottom: 10px;
+  text-align: center;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  
+}
+
+.container2 {
+ /* width:20%;
+  background-color: #4aaaa5;
+  position:absolute;
+  padding:10px;
+  z-index: 90;*/
+  position: relative;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  bottom: 150px;
+  left:300px;
+}
+
+#rpg-game {
+
+width: 100%;
+/*height: 250px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;*/
+position: relative;
+}
+
+.container3 {
+  position: relative;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  bottom: 100px;
+  left: 50px;
+}
+
+#triviagame {
+
+width: 100%;
+/*height: 250px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;*/
+position: relative;
+}
+
+.container4 {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  bottom:300px;
+  left:300px;
+
+}
+
+#rutgersinfowidget {
+
+width: 100%;
+/*height: 250px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;*/
+position: relative;
+}
+
+.container5 {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  bottom:250px;
+  left:50px;
+}
+
+#rockpaperscissors {
+
+width: 100%;
+/*height: 250px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding-top: 35px;*/
+position: relative;
+}
+
+footer {
+  
+  /*margin-top: 700px; */
+  padding: 20px;
+  /*clear: both;*/
+  background: #666666;
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  /*margin-left:0;*/
+  text-align:center;
+  color: #ededed;
+  border-top: 8px solid #4aaaa5;
+  /*z-index:1;*/
+}
+
+/*Tried to have each one social image link have an id, 
+but maybe needs to be a class or don't need bc "connect-with-me" id*/
+/*#github,
+#linkedin, 
+#stackoverflow{
+*/  /*width: 100px;*/
+  /*height: 100px;*/
+  /*background-image:url("../images/github.png");*/
+/*  position: relative;
+  top: 130px;
+  z-index: 2;
+}
+
+*/ 
+
+
+
+
