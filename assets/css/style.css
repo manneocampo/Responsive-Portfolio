@@ -1,21 +1,27 @@
 /**
- * HW Assignment portfolio, index, contact StyleSheet
+ * HW Assignment 2 Responsiveness for portfolio, index, contact StyleSheet
  **/
 
 * {
   box-sizing: border-box;
-  /*text-align: center;*/
+  
 }
 
-/*Took some of the float code to start with ideas*/
 /*any code that is commented out inside {} is something I tried but didn't work*/
-
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
   font-size: 15px;
   line-height: 24px;
   color: #777777;
-  /*background: pink;*/
-  /*background-image: url("images/cork-wallet.png");*/
+ 
+}
+
+.wrapper {
+  min-height:100%;
+  margin-bottom: -75px;
 }
 
 .header {
@@ -29,9 +35,13 @@ body {
 
 .header > div {
   display:inline-block;
-  margin: 0 150px;
+  /*margin-left: 0 150px;*/
   text-align: center;
 
+}
+
+.header > div:first-child {
+  margin-left: 150px;
 }
 
 div.nav {
@@ -39,35 +49,8 @@ div.nav {
   display:flex;
   align-items:center;
   height: 100%;
+  margin-right: 150px;
 }
-
-
-/*div that includes header and h1 tags*/ 
-/*#fixed {
-  position: fixed;
-  margin: 0 auto;
-  top: 0;*/
- /* height: 83px;*/
-  /*left: 150px;*/
-  /*padding: 0px;
-  margin: 0;*/
- /* text-align: center;
-  background: #eee;
-  width: 100%;
-}*/
-
-/*includes h1 tag with my name*/
-/*header {*/
-  /*padding: 20px;*/
-  /*margin-bottom: 20px;*/
-  /*position:fixed;*/
-  /*width:100%;
-  color: #fff;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  z-index:200;
-  margin: 0 auto;*/
-/*}*/
 
 
 /*My Name at top of the page*/
@@ -76,12 +59,8 @@ h1 {
   color: #fff;
   padding: 35px 30px;
   width:234px;
-  /*height:84px;*/
-  /*left:148px;
-  top:2px;*/
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 24px;
-  /*margin-left:150px;*/
   font-weight: bold;
 }
 
@@ -97,26 +76,6 @@ h2 {
   font-weight: bold;
 }
 
-/*h2:after {
-  background: none repeat scroll 0 0 #666666;
-  bottom: -15px;
-  content:"";
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 600px;
-  z-index:100;
-}*/
-
-/*hr {
-  display:block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 20px auto;
-  margin-right: auto;
-  border-style:inset;
-  border-width:1px;
-}*/
 
 .divider {
   margin: 0 20px;
@@ -125,7 +84,6 @@ h2 {
 /*Contact specific*/
 .main-content {
   margin: 20px;
-
 }
 
 .contactcontent {
@@ -140,53 +98,24 @@ h2 {
 
 /*connect-with-me*/
 h3 {
-  /*margin-top:100px;*/
-  /*position: relative;*/
-  /*border-bottom: 1px solid #666666;*/
-  /*text-decoration: underline;*/
+
   color: #4aaaa5;
   font-size: 20px;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-weight: bold;
-  /*padding: 20px 0;*/
 }
 
-/*h3:after {
-  background: none repeat scroll 0 0 #666666;
-  bottom: -15px;
-  content:"";
-  display: block;
-  height: 2px;
-  position: relative;
-  right: -35px;
-  width: 200px;
-}*/
 
-/*nav tag with ul and li of about, portfolio, 
-contact*/
-/*#absolute {
-  position: absolute;
-  right: 1040px;
-  left:820px;
-  width: 270px;
-  padding: 0 30px;
-  background: #fff;
-  font-size: 18px;
-}*/
 
 ul {
-  /*position: fixed;
-  top:0;*/
+  
   list-style-type: none;
   display: flex;
-  /*padding:35px 30px;*/
-  /*overflow:hidden;*/
+  margin-right: 0 150px;
 }
 
 li {
-  /*display: inline;
-  float: left;*/
-  /*display: block;*/
+ 
   padding: 10px 5px;
   border-right: 1px solid #666666;
   margin-right: 10px;
@@ -205,7 +134,7 @@ li a {
 li a.active {
   background-color: #4aaaa5;
   color:white;
-  /*padding:5px 5px;*/
+ 
 }
 
 li a:hover:not(.active) {
@@ -256,11 +185,8 @@ and contact form for contact*/
 #main-bio {
   width: 650px;
   background: #fff;
-  margin-top: 130px;
-  /*margin-left:20px;*/
-  /*text-align: left;*/
+  margin-top: 50px;
   padding-top: 30px;
-  margin-bottom:110px;
   z-index: -90;
   border: 1px solid #dddddd;
 }
@@ -278,8 +204,7 @@ p {
   float:right;
   background: #ffffff;
   border: 1px solid #cccccc;
-  position: relative;
-  top: 130px;
+  margin-top: 50px;
   text-align: center;
   z-index: -100;
   padding: 20px;
@@ -380,14 +305,16 @@ width: 100%;
 position: relative;
 }
 
+.push {
+  height: 75px;
+}
+
 footer {
   
-
+  height: 75px;
   padding: 20px;
   background: #666666;
-  position: fixed;
   width: 100%;
-  bottom:0;
   text-align:center;
   color: #ededed;
   border-top: 8px solid #4aaaa5;
@@ -398,8 +325,11 @@ footer {
 
 
 @media only screen and (max-width: 980px) {
-
-    }
+  #bio-image {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+}
 
 
 @media only screen and (max-width: 768px){
