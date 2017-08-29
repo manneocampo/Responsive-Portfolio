@@ -217,10 +217,23 @@ p {
 /*Portfolio IDs*/ 
 
 .piccontainer {
-  width: 50%;
-  padding-left:20px;
+  width: 100%;
+  /*padding-left:20px;*/
 }
-.container1 {
+
+
+
+.pic {
+  display: inline-block;
+  position: relative;
+  height:200px;
+  width:230px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+
+}
+/*.container1 {
 
   position: relative;
   border: 1px solid black;
@@ -228,13 +241,13 @@ p {
   width: 200px;
   top:50px;
   left:50px;
-}
+}*/
 
 
 #hangman {
 
 width: 100%;
-position: relative;
+/*position: relative;*/
 }
 
 /*this span is for all pics*/
@@ -248,37 +261,37 @@ span {
   
 }
 
-.container2 {
+/*.container2 {
   position: relative;
   border: 1px solid black;
   height: 200px;
   width: 200px;
   bottom: 150px;
   left:300px;
-}
+}*/
 
 #rpg-game {
 
 width: 100%;
-position: relative;
+/*position: relative;*/
 }
 
-.container3 {
+/*.container3 {
   position: relative;
   border: 1px solid black;
   height: 200px;
   width: 200px;
   bottom: 100px;
   left: 50px;
-}
+}*/
 
 #triviagame {
 
 width: 100%;
-position: relative;
+/*position: relative;*/
 }
 
-.container4 {
+/*.container4 {
   position: relative;
   border: 1px solid black;
   width: 200px;
@@ -286,27 +299,27 @@ position: relative;
   bottom:300px;
   left:300px;
 
-}
+}*/
 
 #rutgersinfowidget {
 
 width: 100%;
-position: relative;
+/*position: relative;*/
 }
 
-.container5 {
+/*.container5 {
   position: relative;
   border: 1px solid black;
   width: 200px;
   height: 200px;
   bottom:250px;
   left:50px;
-}
+}*/
 
 #rockpaperscissors {
 
 width: 100%;
-position: relative;
+/*position: relative;*/
 }
 
 .push {
