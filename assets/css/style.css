@@ -21,7 +21,7 @@ body {
 
 .wrapper {
   min-height:100%;
-  margin-bottom: -75px;
+  margin-bottom: -55px;
 }
 
 .header {
@@ -81,6 +81,9 @@ h2 {
   margin: 0 20px;
 }
 
+.divider-side {
+  margin: 0 20px;
+}
 /*Contact specific*/
 .main-content {
   margin: 20px;
@@ -194,7 +197,8 @@ and contact form for contact*/
 /*pertains to all three html files*/
 p {
   margin: 0 20px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   font-family: "Arial", Helvetica Neue, Helvetica, sans-serif;
 }
 
@@ -329,11 +333,40 @@ footer {
     width: calc(100% - 40px);
     height: auto;
   }
+  .container {
+   width: 660px; 
+  }
+
+  #main-bio {
+    width: 400px;
+  }
+
+  #connect-with-me {
+    width: 228px;
+  }
 }
 
 
 @media only screen and (max-width: 768px){
-  
+  #bio-image {
+    width: 50%;
+  }
+  #main-bio {
+    width: 100%;
+  }
+  #connect-with-me {
+    width:100%;
+    text-align:left;
+  }
+  .header > div:first-child {
+    margin-left:45px;
+  }
+  div.nav {
+    margin-right: 45px;
+  }
+  .divider-side {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 640px){
